@@ -17,20 +17,20 @@
         </header>
 
         <nav>
-            <a href="">Sobre Nosotros</a>
-            <a href="">Proyectos</a>
-            <a href="">Blog</a>
-            <a href="">Referencias</a>
-            <a href="">Contactos</a>
+            <a href="#sobremi">Sobre Mi</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#blog">Blog</a>
+            <a href="#referencias">Referencias</a>
+            <a href="#contactos">Contactos</a>
         </nav>
     </div>
     <!--Secciones-->
     <main>
-        <!--Seccion Sobre Nosotros-->
+        <!--Seccion Sobre Mi-->
         <section>
-             <h2>Sobre Nosotros</h2>
+             <h2 id="sobremi">Sobre Mi</h2>
              <div>
-                <img src="" alt="Imagen mia">
+                <img src="./assets/perfil.png" alt="Imagen mia">
              </div>
              <div>
                 <p>
@@ -44,31 +44,36 @@
                     <li>Pseint</li>
                     <li>C++</li>
                     <li>Cocodrile Clips</li>
+                    <li>Html</li>
                 </ul>
              </div>
         </section>
         <!--Seccion Proyectos-->
         <section>
-             <h2>Proyectos</h2>
+             <h2 id="proyectos">Proyectos</h2>
              <div><!--Contenedor de Cards de Proyectos-->
 
                 <div><!--Template Card Proyect-->
-                    <h4>Proyecto Portafolio JC</h4>
-                    <p>Portafolio realizado en clare de Jovenes CreaTIvos para aprendizaje de uso de HTML</p>
-                    <a href="">link</a>
+                    <ol>
+                        <li>
+                            <h4>Proyecto Portafolio JC</h4>
+                        </li>
+                        <p>Portafolio sobre mi realizado en clase de Jovenes CreaTIvos para aprendizaje de uso de HTML</p>
+                        <a href="https://github.com/ProAndres/Portafolio.git">Link de GitHub</a>
+                    </ol>
                 </div>
              </div>
         </section>
         <!--Seccion Blog-->
-        <section>
-             <h2>Blog</h2>
+        <section> 
+             <h2 id="blog">Blog</h2>
              <div>
                 <button>Crear Post</button>
              </div>
         </section>
         <!--Seccion Referencias-->
         <section>
-             <h2>Referencias</h2>
+             <h2 id="referencias">Referencias</h2>
              <div>
                 <div>
                     <img src="" alt="Imagen de la Referencia">
@@ -81,28 +86,26 @@
         </section>
         <!--Seccion Contactos-->
         <section>
-             <h2>Contactos</h2>
+             <h2 id="contactos">Contactos</h2>
              <div>
                 <form>
+                    <fieldset>
+                    <legend>Formulario de Contactos</legend>
                     <label for="">Nombre</label>
                     <input type="text" name="inp-nombreUsuario" id="inp-nombreUsuario" placeholder="Ingrese su Nombre...">
                     <label for="">Mensaje</label>
                     <input type="text" placeholder="Ingrese su Mensaje...">
                     <button>Enviar</button>
+                    </fieldset>
                 </form>
              </div>
         </section>
         
     </main>
-
-
-
-
-
-
-
-    </main>
-
+    <footer>
+        <p>© 2023 Portafolio de Andrés Navarrete</p>
+        <p>Contacto: <a href="mailto:andresnavarrete146@gmail.com">andresnavarrete146@gmail.com</a></p>
+    </footer>
 
 </body>
 </html>
