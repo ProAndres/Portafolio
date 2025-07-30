@@ -1,0 +1,59 @@
+p {
+    background-color: blue;
+}
+/*hola*/
+selector {
+    background-color: red;
+    color: white;
+}
+.container {
+    width: 1000%;
+    height: 1000px;
+    border: 3px solid black;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+
+
+
+
+
+/* ///////////////////////////
+ * POSICIONES EN CSS
+ * /////////////////////////// */
+.static {
+    position: static;
+    background-color: red;
+    /* No se mueve, es el valor por defecto */
+}
+.relative {
+    position: relative;
+    background-color: pink;
+    /* Top - Left - Bottom - Right */
+    left: 100px;
+    top: 300px;
+}
+.absolute {
+    position: absolute;
+    background-color: blue;
+    /* Se mueve saliendose del flujo, es decir que si se mueve en una fila el anterior a el avanzara una posicion*/
+    left: 200px;
+}
+.fixed {
+    position: fixed;
+    background-color: lightblue;
+    left: 1000px;
+    top: 150px;
+    /* Se sobre pone y siempre esta en la pantalla, se mueve cin el usuario */
+}
+.sticky {
+    position: sticky;
+    background-color: limegreen;
+    top: 100px;
+    left: 200px;
+    /* Cuando cumple las condiciones que puse se movera como el fixed*/
+}

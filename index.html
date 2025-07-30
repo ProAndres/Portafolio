@@ -7,106 +7,135 @@
     <meta name="keywords" content="Portafolio, web, ">
     <meta name="Author" content="Andres N" > 
     <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!--Titulo Principal con menu de navegacion-->
     <div>
-
-        <header>
-            <h1>Portafolio Andrés Navarrete</h1>
+        <header class="header" id="header">
+        <nav class="nav__container">
+            <h2 id="name">Andrés David Navarrete Chavarro</h2>
+            <div class="nav__menu" id="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#sobremi" class="nav__link">Sobre Mi</a></li>
+                <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
+                <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="#referencias" class="nav__link">Referencias</a></li>
+            </ul>
+            </div>
         </header>
-
-        <nav>
-            <a href="#sobremi">Sobre Mi</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#blog">Blog</a>
-            <a href="#referencias">Referencias</a>
-            <a href="#contactos">Contactos</a>
         </nav>
     </div>
     <!--Secciones-->
-    <main>
+    <main class="main" id="main">
         <!--Seccion Sobre Mi-->
-        <section>
-             <h2 id="sobremi">Sobre Mi</h2>
-             <div>
-                <img src="./assets/perfil.png" alt="Imagen mia">
+        <section class="section__sobremi" id="section__sobremi">
+                <h2 class="titulo__sobremi" id="titulo__sobremi">Sobre Mi</h2>
+             <div class="foto__sobremi" id="foto__sobremi">
+                <img src="./assets/imagenes/perfil.png" alt="Imagen mia">
              </div>
-             <div>
-                <p>
-                    Bachiller tecnico en Redes y Telecomunicaciones, con conocimientos basicos sobre la programacion y circuitos
-                </p>
+             <div class="descripcion__sobremi" id="descripcion__sobremi">
+                    <p>
+                        Bachiller técnico en Redes y Telecomunicaciones, con conocimientos básicos sobre la programación y circuitos
+                    </p>
              </div>
              <!--Listas-->
-             <div>
+             <div class="lista__sobremi" id="lista__sobremi">
                 <ul>
                     <li>DFD</li>
                     <li>Pseint</li>
                     <li>C++</li>
-                    <li>Cocodrile Clips</li>
                     <li>Html</li>
+                    <li>C#</li>
+                    <li>Cocodrile Clips</li>
                 </ul>
              </div>
         </section>
         <!--Seccion Proyectos-->
-        <section>
-             <h2 id="proyectos">Proyectos</h2>
+        <section class="section__proyectos" id="section__proyectos">
+             <h2 class="titulo__proyectos" id="titulo__proyectos">Proyectos</h2>
              <div><!--Contenedor de Cards de Proyectos-->
-
                 <div><!--Template Card Proyect-->
-                    <ol>
-                        <li>
-                            <h4>Proyecto Portafolio JC</h4>
+                    <ol class="lista__proyectos" id="lista__proyectos">
+                        <li class="proyectos__item" id="proyectos__item">
+                            <h4 class="titulo__item">Proyecto Portafolio JC</h4>
+                            <p class="parrafo__proyectos" id="parrafo__proyectos">Portafolio sobre mi realizado en clase de Jovenes CreaTIvos para aprendizaje de uso de HTML, CSS y javaScript<br><a href="https://github.com/ProAndres/Portafolio.git" class="link__proyectos" id="link__proyectos">Link de GitHub</a></p>
+                            <img src="./assets/imagenes/portafolio.png" alt="Proyecto Portafolio JC" class="img__proyectos" id="img__proyectos">
                         </li>
-                        <p>Portafolio sobre mi realizado en clase de Jovenes CreaTIvos para aprendizaje de uso de HTML</p>
-                        <a href="https://github.com/ProAndres/Portafolio.git">Link de GitHub</a>
+                        <li class="proyectos__item" id="proyectos__item">
+                            <h4 class="titulo__item">Proyecto PixelLife</h4>
+                            <p class="parrafo__proyectos" id="parrafo__proyectos">Pagina web en la que se puede compartir que siente al jugar un videojuego, para demostrar que los videojuegos pueden hacer sentir bien a alguien, este proyecto esta hecho con HTML, CSS, JavaScript</p>
+                            <img src="./assets/imagenes/pixellife.png" alt="Proyecto PixelLife" class="img__proyectos" id="img__proyectos">
+                        </li>
+                        <li class="proyectos__item" id="proyectos__item">
+                            <h4 class="titulo__item">Sin Nombre</h4>
+                            <p class="parrafo__proyectos" id="parrafo__proyectos">Es un videojuego que consiste en ------------ y esta hecho con Unity y C#</p>
+                            <img src="./assets/imagenes/pixellife.png" alt="Proyecto PixelLife" class="img__proyectos" id="img__proyectos">
+                        </li>
                     </ol>
                 </div>
              </div>
         </section>
         <!--Seccion Blog-->
-        <section> 
-             <h2 id="blog">Blog</h2>
+        <section section="section__blog" id="section__blog"> 
+             <h2 class="titulo__blog" id="titulo__blog">Blog</h2>
              <div>
-                <button>Crear Post</button>
+                <button class="boton__blog" id="boton__blog">Crear Post</button>
              </div>
         </section>
         <!--Seccion Referencias-->
-        <section>
-             <h2 id="referencias">Referencias</h2>
-             <div>
-                <div>
-                    <img src="" alt="Imagen de la Referencia">
-                    <div>
-                        <p> Descripcion de la referencia</p>
-                        <h4>Nombre, Cargo, Contacto....</h4>
-                    </div>
-                </div>
-             </div>
+        <section class="section__referencias" id="section__referencias">
+             <h2 class="titulo__referencias" id="titulo__referencias">Referencias</h2>
+             <ol class="lista__referencias" id="lista__referencias">
+                <li class="referencias__item" id="referencias__item">
+                    <p class="parrafo__referencias" id="parrafo__referencias">Laura fue mi supervisora directa durante el voluntariado en proyectos de liderazgo juvenil con comunidades rurales en el sur de Colombia. Bajo su orientación, desarrollé habilidades en trabajo comunitario, gestión de eventos y resolución de conflictos. Su enfoque profesional y compromiso con el cambio social hicieron de mi experiencia algo transformador.</p>
+                    <h4 class="datos__referencias" id="datos__referencias">
+                    <strong>Cargo:</strong> Coordinadora de Proyectos Sociales – Fundación Manos Unidas
+                    <br><strong>Teléfono:</strong> +57 310 456 7890
+                    <br><strong>Correo:</strong> laura.fernandez@manosunidas.org</h4>
+                    <img src="./assets/imagenes/laura.png" alt="Imagen de la Referencia" class="img__referencias" id="img__referencias">
+                </li>
+                <li class="referencias__item" id="referencias__item">
+                    <p class="parrafo__referencias" id="parrafo__referencias">El profesor Andrés fue mi mentor académico durante mi participación en el semillero de robótica y programación del colegio. Me apoyó tanto en competencias técnicas como en el desarrollo del pensamiento lógico y el trabajo colaborativo. Su acompañamiento fue clave para definir mi interés en las ciencias computacionales</p>
+                    <h4 class="datos__referencias" id="datos__referencias">
+                    <strong>Cargo:</strong> Profesor de Robótica y Programación
+                    <br><strong>Teléfono:</strong> +57 310 123 4567
+                    <br><strong>Correo:</strong> andres.garcia@colegio.edu.co</h4>
+                    <img src="./assets/imagenes/Andres.png" alt="Imagen de la Referencia" class="img__referencias" id="img__referencias">
+                </li>
+                <li>
+                    <p class="parrafo__referencias" id="parrafo__referencias">Carolina fue la directora del proyecto de comunicación social en el que participé como creador de contenido. Durante este proceso, aprendí sobre diseño gráfico, manejo de redes sociales y estrategias de difusión comunitaria. Su liderazgo fomentó un ambiente creativo y comprometido con las causas sociales.</p>
+                    <h4 class="datos__referencias" id="datos__referencias">
+                    <strong>Cargo:</strong> Directora de Comunicación Social
+                    <br><strong>Teléfono:</strong> +57 310 789 0123
+                    <br><strong>Correo:</strong> carolina.martinez@comunicacion.edu.co</h4>
+                    <img src="./assets/imagenes/Carolina.png" alt="Imagen de la Referencia" class="img__referencias" id="img__referencias">
+                </li>
+             </ol>
         </section>
         <!--Seccion Contactos-->
-        <section>
-             <h2 id="contactos">Contactos</h2>
+        <section class="section__contactos" id="section__contactos">
+             <h2 class="titulo__contactos" id="titulo__contactos">Contactos</h2>
              <div>
-                <form>
-                    <fieldset>
-                    <legend>Formulario de Contactos</legend>
-                    <label for="">Nombre</label>
+                <form class="formulario__contactos" id="formulario__contactos">
+                    <fieldset class="fieldset__contactos" id="fieldset__contactos">
+                    <legend class="legend__contactos" id="legend__contactos">Formulario de Contactos</legend>
+                    <label for="" class="label__contactos">Nombre</label>
                     <input type="text" name="inp-nombreUsuario" id="inp-nombreUsuario" placeholder="Ingrese su Nombre...">
-                    <label for="">Mensaje</label>
-                    <input type="text" placeholder="Ingrese su Mensaje...">
-                    <button>Enviar</button>
+                    <label for="" class="label__contactos">Mensaje</label>
+                    <textarea name="inp-mensaje" id="inp-mensaje" placeholder="Ingrese su Mensaje..."></textarea>
+                    <button class="boton__contactos" id="boton__contactos">Enviar</button>
                     </fieldset>
                 </form>
              </div>
         </section>
-        
     </main>
-    <footer>
-        <p>© 2023 Portafolio de Andrés Navarrete</p>
+    <footer class="footer" id="footer">
+        <p>© 2025 Portafolio de Andrés Navarrete</p>
         <p>Contacto: <a href="mailto:andresnavarrete146@gmail.com">andresnavarrete146@gmail.com</a></p>
     </footer>
-
 </body>
 </html>
