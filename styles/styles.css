@@ -1,0 +1,64 @@
+/*=======/ Modulos /======*/
+@import 'header-nav.css';
+@import 'main-sections.css';
+@import 'footer.css';
+
+/*=======/ Variables /======*/
+:root {
+    --header-height: 60px;
+/*=======/ Colores de la pagina /======*/
+    --Main-Color: #7a8f8b;
+    --Secondary-Color: #98b0a9;
+    --Terciarty-Color: #85ac91;
+    --Accent-Color: #375c51;
+    --Text-Color: #000000;
+    --Body-Color: #effcf8;
+    --Link-Color: #000000;
+
+/*========== Tipo de letra ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "DM Sans", sans-serif;
+    --biggest-font-size: 2rem;
+    --normal-font-size: 1.25rem;
+    --small-font-size: 0.75rem;
+
+/*========== Tamaño de Letra ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+/*=======/ Cosas Base /======*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: var(--body-font);
+    background-color: var(--Body-Color);
+    color: var(--Text-Color);
+}
+a {
+    text-decoration: none;
+}
+nav a {
+    position: relative;
+}
+nav a::after {
+    content: "";
+    background-color: var(--Accent-Color);
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.7s;
+}
+nav a:hover::after {
+    width: 100%;
+}
+strong {
+    font-weight: var(--font-bold);
+}
+
+

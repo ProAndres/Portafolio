@@ -1,0 +1,39 @@
+/*=======/ Header y Nav de la pagina /======*/
+header {
+    background-color: var(--Main-Color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: var(--header-height);
+}
+.nav__menu {
+    display: flex;
+    gap: 20px;
+}
+.nav__list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-right: 40px;
+    list-style: none;
+}
+.nav__item {
+    color: var(--Text-Color);
+    font-weight: 500;
+    font-size: 18px;
+}
+.nav__link {
+    color: var(--Text-Color);
+    transition: color 0.3s ease;
+}
+.nav__link:hover {
+    color: var(--Accent-Color);
+}
